@@ -1,11 +1,11 @@
 version: '3.7'
 
 services:
-  backend:
+  server:
     volumes:
       - static:/static
     build:
-      context: ./backend
+      context: ./server
     ports:
       - "8000:8000"
   frontend:
